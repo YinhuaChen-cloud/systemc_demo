@@ -1,4 +1,3 @@
-// checked
 #include "fir.h"
 
 // Coefficients for each FIR
@@ -44,7 +43,7 @@ void fir::fir_main(void) {
 //    inp_rdy.write(0);
     // -------------- added in tutorial 4 -------------- end
 
-    sc_int<16> val;
+    sc_int<32> val;
     for(int i = 0; i < 5; i++) {
       val += coef[i] * taps[i];
     }

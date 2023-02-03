@@ -1,4 +1,3 @@
-// checked
 #include <systemc.h>
 
 SC_MODULE(tb) {

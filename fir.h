@@ -1,4 +1,3 @@
-// checked
 #include <systemc.h>
 SC_MODULE(fir) {
   sc_in<bool> clk; // 时钟是输入信号，为bool类型

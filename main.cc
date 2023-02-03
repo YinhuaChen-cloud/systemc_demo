@@ -1,4 +1,3 @@
-// checked
 #include <systemc.h>
 #include "fir.h"
 #include "tb.h"
