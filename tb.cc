@@ -1,3 +1,4 @@
+// checked
 #include "tb.h"
 
 // 1. reset inp   2. generate output
@@ -5,7 +6,7 @@ void tb::source() {
   // Reset
   inp.write(0);
   rst.write(1);
-  wait();
+  wait(); // reset for 1 clock cycles
   rst.write(0);
   wait();
 
@@ -13,7 +14,7 @@ void tb::source() {
 
   // Send stimulus to FIR
   for(int i = 0; i < 64; i++) {
-    if(i > 23 && i < 29>)      
+    if(i > 23 && i < 29)      
       tmp = 256;
     else 
       tmp = 0;

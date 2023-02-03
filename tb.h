@@ -1,3 +1,4 @@
+// checked
 #include <systemc.h>
 
 SC_MODULE(tb) {
@@ -11,9 +12,9 @@ SC_MODULE(tb) {
   void sink(); // 1. read data from FIR
   // 把Testbench里的线程分成source和sink是非常重要的, 特别是在涉及到生产者-消费者模型的时候, 你会在以后见识到
 
-  FILE *outfp；
+  FILE *outfp;
   // added in tutorial 5 for timestamp -- start
-  sc_time start_time[64], end_time[64], clock_period;
+//	sc_time start_time[64], end_time[64], clock_period;
   // added in tutorial 5 for timestamp -- end
 
   SC_CTOR(tb) {
